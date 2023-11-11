@@ -19,7 +19,7 @@ import java.time.Instant;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Table(name = "ROLES")
+@Table(name = "REFRESH_TOKENS")
 public class RefreshToken {
 
     @Id
