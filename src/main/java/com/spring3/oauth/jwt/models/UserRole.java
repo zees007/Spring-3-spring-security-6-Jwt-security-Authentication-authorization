@@ -12,7 +12,7 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "FL_ROLES")
+@Table(name = "ROLES")
 public class UserRole {
 
     @Id
