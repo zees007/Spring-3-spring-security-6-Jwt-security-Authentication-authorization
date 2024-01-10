@@ -5,3 +5,5 @@ you’ll learn how to implement JWT authentication and authorization in a Spring
 You can follow my blog for step by step guides:
 
 https://medium.com/@mhmdzeeshan/spring-boot-3-spring-security-6-jwt-authentication-authorization-98702d6313a5
+
+(Don't forget to give max claps 👏👏👏 (50 max) on my blog to motivate me for providing such more articles) 😊
