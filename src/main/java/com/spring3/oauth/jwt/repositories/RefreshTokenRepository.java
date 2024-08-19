@@ -1,7 +1,7 @@
 package com.spring3.oauth.jwt.repositories;
 
-import com.spring3.oauth.jwt.helpers.RefreshableCRUDRepository;
 import com.spring3.oauth.jwt.models.RefreshToken;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
@@ -12,7 +12,7 @@ import java.util.Optional;
  * @project oauth-jwt
  */
 @Repository
-public interface RefreshTokenRepository extends RefreshableCRUDRepository<RefreshToken, Integer> {
+public interface RefreshTokenRepository extends CrudRepository<RefreshToken, Integer> {
 
     Optional<RefreshToken> findByToken(String token);
 }

@@ -25,7 +25,6 @@ public class UserServiceImpl implements UserService {
     ModelMapper modelMapper = new ModelMapper();
 
 
-
     @Override
     public UserResponse saveUser(UserRequest userRequest) {
         if(userRequest.getUsername() == null){
@@ -58,17 +57,13 @@ public class UserServiceImpl implements UserService {
                 oldUser.setRoles(user.getRoles());
 
                 savedUser = userRepository.save(oldUser);
-                userRepository.refresh(savedUser);
             } else {
                 throw new RuntimeException("Can't find record with identifier: " + userRequest.getId());
             }
         } else {
-//            user.setCreatedBy(currentUser);
             savedUser = userRepository.save(user);
         }
-        userRepository.refresh(savedUser);
-        UserResponse userResponse = modelMapper.map(savedUser, UserResponse.class);
-        return userResponse;
+        return modelMapper.map(savedUser, UserResponse.class);
     }
 
     @Override
@@ -77,16 +72,14 @@ public class UserServiceImpl implements UserService {
         UserDetails userDetail = (UserDetails) authentication.getPrincipal();
         String usernameFromAccessToken = userDetail.getUsername();
         UserInfo user = userRepository.findByUsername(usernameFromAccessToken);
-        UserResponse userResponse = modelMapper.map(user, UserResponse.class);
-        return userResponse;
+        return modelMapper.map(user, UserResponse.class);
     }
 
     @Override
     public List<UserResponse> getAllUser() {
         List<UserInfo> users = (List<UserInfo>) userRepository.findAll();
         Type setOfDTOsType = new TypeToken<List<UserResponse>>(){}.getType();
-        List<UserResponse> userResponses = modelMapper.map(users, setOfDTOsType);
-        return userResponses;
+        return modelMapper.map(users, setOfDTOsType);
     }
 
 
