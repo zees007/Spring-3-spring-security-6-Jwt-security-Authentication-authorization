@@ -22,7 +22,7 @@ You can follow my blog for step by step guides:
 
 <h1>❤️ Support & Engagement ❤️</h1>
 
-⭐ If you find this project helpful, please give it a star on [GitHub]([https://github.com/zees007/microservices-jwt-authentication-authorization-spring-security](https://github.com/zees007/Spring-3-spring-security-6-Jwt-security-Authentication-authorization))! 
+⭐ If you find this project helpful, please give it a star on [GitHub](https://github.com/zees007/microservices-jwt-authentication-authorization-spring-security](https://github.com/zees007/Spring-3-spring-security-6-Jwt-security-Authentication-authorization)
 
 ⭐ If you find this article informative and beneficial, please consider showing your appreciation by giving it a clap 👏👏👏, highlight it and replying on my story story. Feel free to share this article with your peers. Your support and knowledge sharing within the developer community are highly valued.
 
